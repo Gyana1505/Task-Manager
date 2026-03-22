@@ -14,14 +14,14 @@ const Home = () => {
           Organize your work. Boost your productivity. Achieve your goals.
         </p>
 
-        {/* Quotes Section */}
+       
         <div className="space-y-4 text-gray-100 text-sm italic">
           <p>“The secret of getting ahead is getting started.”</p>
           <p>“Small steps every day lead to big achievements.”</p>
           <p>“Focus on being productive instead of busy.”</p>
         </div>
 
-        {/* Divider */}
+        
         <div className="w-20 h-1 bg-white mx-auto my-6 rounded"></div>
 
         <p className="text-gray-300 text-sm">

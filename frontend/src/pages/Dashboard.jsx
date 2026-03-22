@@ -18,10 +18,7 @@ const Dashboard = () => {
   const [showForm, setShowForm] = useState(false);
   const [statusFilter, setStatusFilter] = useState("all");
   const { addTask, getAllTask, task, updateTask, deleteTask } = useTask()
-  const fetchTasks = async () => {
-    // const res = await API.get(`/tasks?search=${search}`);
-    // setTasks(res.data);
-  };
+ 
  const filteredTasks = task.filter((t) => {
   const matchesSearch =
     t.title.toLowerCase().includes(search.toLowerCase())
@@ -65,11 +62,11 @@ const Dashboard = () => {
       </motion.h1>
 
       <div className="max-w-4xl mx-auto">
-        {/* Search */}
+        
         <CardWrap>
          <div className="flex flex-col gap-3">
 
-    {/* Search Input */}
+    
     <input
       className="w-full p-2 border rounded-lg outline-none"
       placeholder="🔍 Search tasks..."
@@ -77,7 +74,7 @@ const Dashboard = () => {
       onChange={(e) => setSearch(e.target.value)}
     />
 
-    {/* Filter Buttons */}
+   
     <div className="flex gap-2 flex-wrap">
       <button
         onClick={() => setStatusFilter("all")}
@@ -118,7 +115,7 @@ const Dashboard = () => {
         
         <div className="h-4" />
 
-        {/* Task Form */}
+       
         <motion.button
           onClick={() => setShowForm(!showForm)}
           whileHover={{ scale: 1.05 }}

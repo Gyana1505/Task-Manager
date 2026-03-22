@@ -5,7 +5,7 @@ const Card = ({ title, description, status, onToggle, onDelete, createdAt }) => 
   return (
     <div className="bg-white p-2 rounded-xl shadow-md flex justify-between items-center">
 
-      {/* Left Side */}
+      
       <div>
         <h3 className="text-lg font-semibold">{title}</h3>
         <p className="text-gray-600 text-sm">{description}</p>
@@ -16,7 +16,7 @@ const Card = ({ title, description, status, onToggle, onDelete, createdAt }) => 
        
       </div>
 
-      {/* Right Side Buttons */}
+     
       <div className="flex gap-2 flex-col">
        <div className=' flex gap-2'>
          <button
